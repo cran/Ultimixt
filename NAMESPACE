@@ -1,0 +1,8 @@
+export(K.MixReparametrized, SM.MixReparametrized, Plot.MixReparametrized, SM.MAP.MixReparametrized)
+ 
+importFrom("grDevices", "boxplot.stats", "dev.new")
+importFrom("graphics", "boxplot", "hist", "lines", "par", "plot")
+importFrom("stats", "dbeta", "dnorm", "kmeans", "median", "quantile", "rbeta", "rgamma", "rnorm", "runif", "sd", "var")
+
+importFrom("coda", "gelman.diag", "mcmc.list", "mcmc")
+importFrom("gtools", "permutations", "permute")

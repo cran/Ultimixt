@@ -1,0 +1,11 @@
+0d576e24e81cc5542595d58c8d42889d *DESCRIPTION
+22199bdf23798aa35e9319b2947d3406 *NAMESPACE
+bd137da4bfbca32cd5e1697ea4f9ac9f *R/K.MixReparametrized.R
+4b666ddf02586adb1a27a56da55fa045 *R/Plot.MixReparametrized.R
+4f5a2acc167ca12d6670396280ac1fdc *R/SM.MAP.MixReparametrized.R
+d7ea0937af5b1b8b32ef2205c24dec84 *R/SM.MixReparametrized.R
+efcc35e5e2abd38da7a38ae5c0ca8b98 *man/K.MixReparametrized.Rd
+1162bf455d25fb64566f279aaf2f89b8 *man/Plot.MixReparametrized.Rd
+3cae44245cd85da806154f7bf4be1cb5 *man/SM.MAP.MixReparametrized.Rd
+bacb33214577d3f2f2cde9760bf24a3e *man/SM.MixReparametrized.Rd
+d39310a6ec10abdc747dad11b5c4fadd *man/Ultimixt-package.Rd
