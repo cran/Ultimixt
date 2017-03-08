@@ -29,7 +29,7 @@ The output of this function consists of
 \item{line chart}{ line charts that report the evolution of the proposal scales and of the acceptance rates over the number of batch of 50 iterations.}  
 }
 \references{
-Kamary, K., Lee, J.Y., and Robert, C.P. (2015) Non-informative reparameterisation of location-scale mixtures. arXiv.
+Kamary, K., Lee, J.Y., and Robert, C.P. (2017) Weakly informative reparameterisation of location-scale mixtures. arXiv.
 }
 \author{
 Kaniav Kamary
@@ -41,9 +41,9 @@ Kaniav Kamary
 \code{\link[Ultimixt]{K.MixReparametrized}}
 }
 \examples{
-data(faithful)
-xobs=faithful[50:100,1]
-#estimate=K.MixReparametrized(xobs, k=2, alpha0=.5, alpha=.5, Nsim=1e4)
+#data(faithful)
+#xobs=faithful[,1]
+#estimate=K.MixReparametrized(xobs, k=2, alpha0=.5, alpha=.5, Nsim=20000)
 #plo=Plot.MixReparametrized(xobs, estimate)
 }
 \keyword{plot}

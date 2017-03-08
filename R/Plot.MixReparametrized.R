@@ -20,8 +20,8 @@ function(xobs, estimate){
         yt=list(0)
         x=seq(min(xobs),max(xobs),length=1000)
         for(j in 1:sm){
-            y=mix$p[j,1]*dnorm(x,mean=mix$mu[j,1],sd=sqrt(mix$sig[j,1]))
-            for (i in 2:mix$k) y=y+mix$p[j,i]*dnorm(x,mean=mix$mu[j,i],sd=sqrt(mix$sig[j,i]))
+            y=mix$p[j,1]*dnorm(x,mean=mix$mu[j,1],sd=mix$sig[j,1])
+            for (i in 2:mix$k) y=y+mix$p[j,i]*dnorm(x,mean=mix$mu[j,i],sd=mix$sig[j,i])
             yt[[j]]=y
         }
         mean_density=rep(0, 1000)

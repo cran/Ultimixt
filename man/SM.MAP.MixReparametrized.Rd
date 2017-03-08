@@ -75,8 +75,8 @@ Note.}
 \code{\link[Ultimixt]{K.MixReparametrized}}
 }
 \examples{
-data(faithful)
-xobs=faithful[50:100,1]
+#data(faithful)
+#xobs=faithful[,1]
 #estimate=K.MixReparametrized(xobs,k=2,alpha0=0.5,alpha=0.5,Nsim=1e4)
 #result=SM.MAP.MixReparametrized(estimate,xobs,alpha0=0.5,alpha=0.5)
 }

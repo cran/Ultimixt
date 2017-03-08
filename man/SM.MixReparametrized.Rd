@@ -53,19 +53,18 @@ Kaniav Kamary
 For multimodal outputs such as the mixture model weights, component means, and component variances, for each MCMC draw,
 first the labels of the weights \eqn{p_i, i=1, \ldots, k} and corresponding component means and standard deviations are permuted in
 such a way that \eqn{p_1\le \ldots \le p_k}. Then the component means and standard deviations are jointly partitioned into \eqn{k}
-clusters by applying a standard k-means algorithm with \eqn{k} clusters to a sample of  size \eqn{Tk} (where \eqn{T} is the number of
-iterations), following Fruhwirth-Schnatter (2006) method. For each group,  cluster centers are considered as parameter
+clusters by applying a standard k-means algorithm with \eqn{k} clusters, following Fruhwirth-Schnatter (2006) method. The obtained classification sequence was then used to reorder and identify the other component-specific parameters, namely component mean hyperparameters and weights. For each group,  cluster centers are considered as parameter
 estimates. 
 }
 \seealso{
 \code{\link[Ultimixt]{K.MixReparametrized}}
 }
 \examples{
-data(faithful)
-xobs=faithful[50:100,1]
-#estimate=K.MixReparametrized(xobs, k=2, alpha0=.5, alpha=.5, Nsim=1e4)
+#data(faithful)
+#xobs=faithful[,1]
+#estimate=K.MixReparametrized(xobs, k=2, alpha0=.5, alpha=.5, Nsim=20000)
 #summari=SM.MixReparametrized(xobs,estimate)
 }
 \keyword{summary statistics}
 \keyword{mixture parameters}
-\keyword{k-means clustering parameters}
+\keyword{k-means clustering method}

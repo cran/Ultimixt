@@ -1,6 +1,7 @@
-export(K.MixReparametrized, SM.MixReparametrized, Plot.MixReparametrized, SM.MAP.MixReparametrized)
+export(K.MixReparametrized, SM.MixReparametrized, Plot.MixReparametrized, SM.MAP.MixReparametrized, K.MixPois, SM.MixPois)
  
 importFrom("grDevices", "boxplot.stats", "dev.new")
+importFrom("stats", "dpois")
 importFrom("graphics", "boxplot", "hist", "lines", "par", "plot")
 importFrom("stats", "dbeta", "dnorm", "kmeans", "median", "quantile", "rbeta", "rgamma", "rnorm", "runif", "sd", "var")
 
